@@ -65,7 +65,7 @@ export default function App() {
 }
 ```
 
-Remove the now-unusued `{ StatusBar }` import.
+Remove the now-unused `{ StatusBar }` import.
 
 ## Step 5: Create a Second Screen
 
@@ -362,12 +362,14 @@ In `CatsScreen` add an effect hook to watch for changes in the queried data and 
 
 ```tsx
 useEffect(() => {
-  const newCat = {
-    id: data[0].id,
-    url: data[0].url,
-  };
+  if (data) {
+    const newCat = {
+      id: data[0].id,
+      url: data[0].url,
+    };
 
-  setCatHistory([...catHistory, newCat]);
+    setCatHistory([...catHistory, newCat]);
+  }
 }, [data]);
 ```
 
