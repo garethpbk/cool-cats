@@ -4,7 +4,7 @@
 
 `expo init cool-cats`
 
-If using nom:
+If using npm:
 
 `expo init cool-cats --npm`
 
