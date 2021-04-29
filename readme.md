@@ -191,7 +191,7 @@ const HomeScreen = () => {
 };
 ```
 
-## Step 7: Set Up A Query Client
+## Step 8: Set Up A Query Client
 
 In `App.tsx` add imports from `react-query`:
 
@@ -222,7 +222,7 @@ export default function App() {
 }
 ```
 
-## Step 8: Fetch Some Cats
+## Step 9: Fetch Some Cats
 
 In `CatsScreen` add import from `react-query`:
 
@@ -250,7 +250,7 @@ Extract the data from the response:
 const cat = data ? data[0] : null;
 ```
 
-## Step 9: Create a Cat Component
+## Step 10: Create a Cat Component
 
 In the project's root folder run:
 
@@ -301,7 +301,7 @@ const Cat = (props: ICatProps) => (
 );
 ```
 
-## Step 10: Use Cat in CatsScreen
+## Step 11: Use Cat in CatsScreen
 
 In `CatsScreen` import the `Cat` component and a button:
 
@@ -329,7 +329,7 @@ return (
 );
 ```
 
-## Step 11: Keep Track of Your Cats
+## Step 12: Keep Track of Your Cats
 
 In `CatsScreen` import state and effect hooks from `react`:
 
@@ -373,7 +373,7 @@ useEffect(() => {
 }, [data]);
 ```
 
-## Step 12: See All Your Cats
+## Step 13: See All Your Cats
 
 In `CatsScreen` add some imports from `react-native`:
 
@@ -416,6 +416,6 @@ const styles = StyleSheet.create({
 });
 ```
 
-## Step 12: All Done!
+## Step 14: All Done!
 
 There are plenty of features and improvements this app could take from here! Navigating back to the home screen and then back to the cats screen wipes the history, for example, as it lives in local state - a global state manager could be a solution here. Hopefully this was a good introduction for setting up a React Native app with styling, navigation, and networking.
